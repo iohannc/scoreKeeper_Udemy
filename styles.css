@@ -181,6 +181,19 @@ table {
   object-fit: cover;
 }
 
+.score-limit-area {
+  font-size: 0.8rem;
+  /* display: flex;
+  flex-direction: column; */
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.score-limit-area select {
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
 .scoreboard {
   font-size: 1.7rem;
   color: rgb(90, 90, 90);
@@ -217,4 +230,12 @@ table {
 
 .btn:last-of-type:hover {
   background-color: rgb(209, 13, 13);
+}
+
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
 }
