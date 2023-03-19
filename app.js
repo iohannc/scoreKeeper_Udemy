@@ -24,6 +24,8 @@ playerOneScoreButton.addEventListener("click", () => {
   if (playerOneScore.textContent == scoreLimitValue) {
     playerOneScore.classList.add("winner");
     playerTwoScore.classList.add("loser");
+    playerOneScoreButton.disabled = true;
+    playerTwoScoreButton.disabled = true;
   }
 });
 
@@ -36,6 +38,8 @@ playerTwoScoreButton.addEventListener("click", () => {
   if (playerTwoScore.textContent == scoreLimitValue) {
     playerTwoScore.classList.add("winner");
     playerOneScore.classList.add("loser");
+    playerOneScoreButton.disabled = true;
+    playerTwoScoreButton.disabled = true;
   }
 });
 
@@ -52,4 +56,6 @@ resetButton.addEventListener("click", () => {
   } else if (playerTwoScore.classList.contains("loser")) {
     playerTwoScore.classList.remove("loser");
   }
+  playerOneScoreButton.disabled = false;
+  playerTwoScoreButton.disabled = false;
 });
